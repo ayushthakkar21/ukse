@@ -1,0 +1,351 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply the font to the whole app */
+body {
+    @apply font-custom; /* Use the custom font from Tailwind config */
+  }
+
+
+    /* .site-header
+  {
+    display: grid    ;
+            z-index: 10000;
+            background: 0;
+            margin-top: 0;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+  } */
+
+  /* .nav-item
+  {
+    position: relative;
+  } */
+  .nav-item a{
+ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: .75rem;
+    line-height: 1rem;
+  }
+
+  .nav-item img{
+    vertical-align: middle;
+    height: 1rem;
+    width: auto;
+    padding-right: 4px;
+}
+  .nav-title
+  {
+    font-family: RobotoMono, Arial, sans-serif;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.3125rem;
+    line-height: 1rem;
+    letter-spacing: 1px;
+    color: #000000;
+    vertical-align: middle;
+  }
+
+
+  .external-link-icon {
+    display: inline-block;
+    /* position: relative;
+    top: 0px;
+    left: 2px; */
+}
+  .site-logo
+  { 
+    margin-left: 8.333%;
+  }
+  .link img{
+    height: 4rem;
+    width: auto;
+  }
+  .main{
+    flex: 1 1 auto;
+    text-align: right;
+    margin-right: 1rem;
+  }
+
+
+.nav-root-menu .nav-item a{
+    font-family: Roboto, Arial, sans-serif ;
+    font-weight: 400 ;
+    font-size: 1rem;
+}
+.search-btn
+{
+    cursor: pointer;
+    background-image: url('./assets/search-btn.svg');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-color: #181716;
+    width: 6.25rem;
+}
+.hero-standard
+{
+  position: relative;
+  width: 100%;
+}
+
+.hero{
+  display: flex
+;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 100rem;
+    width: 100%;
+}
+/* .hero-standard::after
+{
+  background-color: #ffdc00;
+  display: block;
+  width: 150vw;
+  height: 200%;
+  position: absolute;
+  top: -100%;
+  left: -50vw;
+  z-index: -2;
+  content: " ";
+} */
+.hero{
+  display: flex
+  ;
+      justify-content: space-between;
+      margin: 0 auto;
+      max-width: 100rem;      width: 100%;
+}
+.content
+{
+  color: inherit;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    bottom: 0;
+    padding-top: 4rem;
+    text-decoration: none;
+}
+
+@media (min-width: 60rem) {
+  .heading{
+      flex-direction: row;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      padding: 0 8.33%;
+  }
+}
+.heading{
+  display: flex
+;
+    flex-direction: column-reverse;
+
+}
+.title{
+  padding: 30px;
+  margin: 0;
+}
+h1{
+  font-family: Clancy, Arial, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: normal;
+}
+.sub-heading{
+  font-family: Clancy, Arial, sans-serif;
+  font-weight: 300;
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.hero-img
+{
+  display: flex
+  ;
+      align-items: center;
+      justify-content: center;
+}
+picture{
+  text-align: center;
+  width: 100%;
+}
+.hero-img img{
+  width: 100%;
+}
+
+
+/* 
+header::after
+{
+  height: 200%;
+  position: absolute;
+  top: -100%;
+  left: -50vw;
+  z-index: -2;
+  content: " ";
+  background-color: #89c4f1;
+  width: 150vw;
+} */
+
+
+
+.nav-item:hover .nav-title{
+  text-decoration: underline;
+}
+
+
+.school-info   { margin: 3rem 0;
+text-align: center;}
+
+.wrapper{
+  padding: 0 20px;
+  box-sizing: content-box;
+  position: relative
+}
+.school-info-item
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+    -ms-flex-pack: justify;
+    gap: 4rem;
+}
+.info-item{
+  flex: 1 1 calc(25% - 4rem);
+    max-width: 14.44rem;
+}
+.text h2{
+  padding: 0 0 1rem;
+  color: #000;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.text p{
+  font-weight: 300;
+  line-height: 24px;
+  color: #555;
+}
+.text hr{
+  margin: 0 auto 1rem;
+  background-color: #fff;
+  width: 1.2rem;
+  height: .1rem;
+}
+/* 
+.main-banner{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  opacity: 0.4;
+  background-size: cover;
+
+} */
+
+/* Video Container */
+.video-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -2;
+  left: 0;
+  right: 0;
+  overflow: hidden; /* Prevents overflow */
+}
+
+/* Video Styling */
+.fullscreen-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  min-height: 100%; /* Ensures video always covers the container */
+  object-fit: cover; /* Ensures the video scales properly */
+  border-radius: 20px;
+}
+
+/* Text Overlay Styling */
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Improves contrast */
+  z-index: 1;
+  padding: 20px;
+}
+
+.text-overlay h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+/* Responsive Button */
+.apply-btn {
+  height: auto;
+  padding: 15px 30px;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(68, 69, 69);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: rgb(51, 51, 140); /* Hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .text-overlay h1 {
+    font-size: 2rem; /* Smaller font size for smaller screens */
+  }
+
+  .apply-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-overlay{
+    width: 100%;
+  }
+  .text-overlay h1 {
+    font-size:2rem; /* Further adjust for very small screens */
+  
+  }
+
+  .apply-btn {
+    padding: 30px 24px;
+    font-size:1.3rem;
+  }
+}
+
+
+a{
+  color: #fff;
+}
+ .nav-title{
+  color: #fff;
+ }
+ svg{
+  fill: #fff;
+ }
